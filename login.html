@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <title>Halaman Login</title>
+  </head>
+  <body>
+    <nav>
+      <a href="#">
+        <img src="assets/brand/logoBrand.png" alt="" />
+      </a>
+    </nav>
+
+    <main>
+      <form class="form-card">
+        <div class="form-header">
+          <h2>Masuk ke Akun</h2>
+          <p>Yuk, lanjutin belajarmu di videobelajar</p>
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-mail <span>*</span></label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Kata Sandi <span>*</span></label>
+          <div class="input-wrapper">
+            <input type="password" id="password" name="password" required />
+            <span class="password-icon">
+              <img src="assets/logo/eye-password.svg" alt="" />
+            </span>
+          </div>
+        </div>
+
+        <a href="#" class="forgot-password">Lupa Password?</a>
+
+        <button type="submit" class="btn btn-primary">Masuk</button>
+        <a href="#" class="btn btn-secondary"> Daftar </a>
+
+        <div class="separator">atau</div>
+
+        <button type="button" class="btn btn-google">
+          <img src="assets/logo/google.svg" alt="" />
+          Masuk dengan Google
+        </button>
+      </form>
+    </main>
+  </body>
+</html>
