@@ -15,59 +15,63 @@
     />
   </head>
   <body>
-    <nav>
-      <a href="#">
-        <img src="assets/brand/brandLogo.png" alt="Logo videobelajar" />
-      </a>
+    <nav class="top">
+      <div class="logo">
+        <a href="/beranda.html">
+          <img src="assets/logo/brandLogo.png" alt="Logo videobelajar" />
+        </a>
+      </div>
     </nav>
 
-    <main>
-      <form class="form-card">
+    <main class="auth">
+      <article class="form-card">
         <header class="form-header">
           <h2>Masuk ke Akun</h2>
           <p>Yuk, lanjutin belajarmu di videobelajar</p>
         </header>
 
-        <div class="form-group">
-          <label for="email">E-mail <span>*</span></label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            required
-            autocomplete="email"
-          />
-        </div>
-
-        <div class="form-group">
-          <label for="password">Kata Sandi <span>*</span></label>
-          <div class="input-wrapper">
+        <form>
+          <div class="form-group">
+            <label for="email">E-mail</label>
             <input
-              type="password"
-              id="password"
-              name="password"
+              type="email"
+              id="email"
+              name="email"
               required
-              autocomplete="password"
+              autocomplete="email"
             />
-            <span class="password-icon">
-              <img src="assets/logo/eye-password.svg" alt="" />
-            </span>
           </div>
-        </div>
 
-        <a href="#" class="forgot-password">Lupa Password?</a>
+          <div class="form-group">
+            <label for="password">Kata Sandi</label>
+            <div class="input-wrapper">
+              <input
+                type="password"
+                id="password"
+                name="password"
+                required
+                autocomplete="password"
+              />
+              <button type="button" class="password-icon">
+                <img src="assets/logo/eye-password.svg" alt="" />
+              </button>
+            </div>
+          </div>
 
-        <button type="submit" class="btn btn-primary">Masuk</button>
+          <a href="#" class="forgot-password">Lupa Password?</a>
 
-        <a href="/register.html" class="btn btn-secondary"> Daftar </a>
+          <button type="submit" class="btn btn-primary">Masuk</button>
 
-        <div class="separator">atau</div>
+          <a href="/register.html" class="btn btn-secondary"> Daftar </a>
 
-        <button type="button" class="btn btn-google">
-          <img src="assets/logo/google.svg" alt="" />
-          Masuk dengan Google
-        </button>
-      </form>
+          <div class="separator">atau</div>
+
+          <button type="button" class="btn btn-google">
+            <img src="assets/logo/google.svg" alt="" />
+            Masuk dengan Google
+          </button>
+        </form>
+      </article>
     </main>
   </body>
 </html>
