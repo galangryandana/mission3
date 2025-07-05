@@ -3,26 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Beranda - Videobelajar</title>
-    <link rel="stylesheet" href="style/style.css" />
     <meta
       name="description"
       content="Halaman utama Videobelajar, tempat kamu bisa menemukan berbagai materi video pembelajaran yang menarik dan bermanfaat."
     />
+    <title>Beranda - Videobelajar</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Poppins&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
   </head>
-  <body class="beranda">
-    <nav class="top">
-      <div class="logo">
-        <a href="/beranda.html">
-          <img src="assets/logo/brandLogo.png" alt="Logo videobelajar" />
-        </a>
-      </div>
+  <body>
+    <nav class="topbar">
+      <a href="/beranda.html" class="logo">
+        <img src="assets/logo/brandLogo.svg" alt="Logo Videobelajar" />
+      </a>
 
-      <div class="menu">
+      <div class="topbar-menu">
         <a href="#">Kategori</a>
         <img src="assets/profile/profile.png" alt="" />
       </div>
@@ -36,7 +36,7 @@
 
     <main class="beranda">
       <section class="hero">
-        <div class="hero-content">
+        <div class="text-hero">
           <h1>
             Revolusi Pembelajaran: Temukan Ilmu Baru melalui Platform Video
             Interaktif!
@@ -47,7 +47,10 @@
             berpartisipasi dalam latihan interaktif yang akan meningkatkan
             pemahaman Anda.
           </p>
-          <a href="#" class="btn btn-primary btn-hero">
+        </div>
+
+        <div class="button-hero">
+          <a href="#courses" class="btn btn-primary">
             Temukan Video Course untuk Dipelajari!
           </a>
         </div>
@@ -55,11 +58,11 @@
 
       <section class="courses">
         <header class="courses-header">
-          <h2>Koleksi Video Pembelajaran Unggulan</h2>
+          <h3>Koleksi Video Pembelajaran Unggulan</h3>
           <p>Jelajahi Dunia Pengetahuan Melalui Pilihan kami!</p>
         </header>
 
-        <nav class="category">
+        <nav class="tabs" id="courses">
           <ul>
             <li><a href="#" class="active">Semua Kelas</a></li>
             <li><a href="#">Pemasaran</a></li>
@@ -68,7 +71,459 @@
             <li><a href="#">Bisnis</a></li>
           </ul>
         </nav>
+
+        <div class="course-wrapper">
+          <article class="course-card">
+            <div class="wrapper">
+              <figure class="card-banner">
+                <img src="assets/image/banner1.jpeg" alt="" />
+              </figure>
+
+              <div class="content-instructor">
+                <div class="card-content">
+                  <h6>Big 4 Auditor Financial Analyst</h6>
+                  <p>
+                    Mulai transformasi dengan instruktur profesional, harga yang
+                    terjangkau, dan...
+                  </p>
+                </div>
+
+                <div class="instructor-info">
+                  <img src="assets/profile/ava1.svg" alt="" />
+                  <div class="instructor-text">
+                    <h6>Jenna Ortega</h6>
+                    <p>
+                      Senior Accountant
+                      <span>di <span class="gojek">Gojek</span></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-footer">
+              <div class="rating">
+                <img src="assets/logo/full-star.png" alt="" />
+                <img src="assets/logo/full-star.png" alt="" />
+                <img src="assets/logo/half-star.png" alt="" />
+                <img src="assets/logo/empty-star.png" alt="" />
+                <img src="assets/logo/empty-star.png" alt="" />
+                <span>3.5 (86)</span>
+              </div>
+              <h4 class="price">Rp 300K</h4>
+            </div>
+          </article>
+
+          <article class="course-card">
+            <div class="wrapper">
+              <figure class="card-banner">
+                <img src="assets/image/banner2.jpeg" alt="" />
+              </figure>
+
+              <div class="content-instructor">
+                <div class="card-content">
+                  <h6>Big 4 Auditor Financial Analyst</h6>
+                  <p>
+                    Mulai transformasi dengan instruktur profesional, harga yang
+                    terjangkau, dan...
+                  </p>
+                </div>
+
+                <div class="instructor-info">
+                  <img src="assets/profile/ava2.svg" alt="" />
+                  <div class="instructor-text">
+                    <h6>Jenna Ortega</h6>
+                    <p>
+                      Senior Accountant
+                      <span>di <span class="gojek">Gojek</span></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-footer">
+              <div class="rating">
+                <img src="assets/logo/full-star.png" alt="" />
+                <img src="assets/logo/full-star.png" alt="" />
+                <img src="assets/logo/half-star.png" alt="" />
+                <img src="assets/logo/empty-star.png" alt="" />
+                <img src="assets/logo/empty-star.png" alt="" />
+                <span>3.5 (86)</span>
+              </div>
+              <h4 class="price">Rp 300K</h4>
+            </div>
+          </article>
+
+          <article class="course-card">
+            <div class="wrapper">
+              <figure class="card-banner">
+                <img src="assets/image/banner3.jpeg" alt="" />
+              </figure>
+
+              <div class="content-instructor">
+                <div class="card-content">
+                  <h6>Big 4 Auditor Financial Analyst</h6>
+                  <p>
+                    Mulai transformasi dengan instruktur profesional, harga yang
+                    terjangkau, dan...
+                  </p>
+                </div>
+
+                <div class="instructor-info">
+                  <img src="assets/profile/ava3.svg" alt="" />
+                  <div class="instructor-text">
+                    <h6>Jenna Ortega</h6>
+                    <p>
+                      Senior Accountant
+                      <span>di <span class="gojek">Gojek</span></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-footer">
+              <div class="rating">
+                <img src="assets/logo/full-star.png" alt="" />
+                <img src="assets/logo/full-star.png" alt="" />
+                <img src="assets/logo/half-star.png" alt="" />
+                <img src="assets/logo/empty-star.png" alt="" />
+                <img src="assets/logo/empty-star.png" alt="" />
+                <span>3.5 (86)</span>
+              </div>
+              <h4 class="price">Rp 300K</h4>
+            </div>
+          </article>
+
+          <article class="course-card">
+            <div class="wrapper">
+              <figure class="card-banner">
+                <img src="assets/image/banner4.jpeg" alt="" />
+              </figure>
+
+              <div class="content-instructor">
+                <div class="card-content">
+                  <h6>Big 4 Auditor Financial Analyst</h6>
+                  <p>
+                    Mulai transformasi dengan instruktur profesional, harga yang
+                    terjangkau, dan...
+                  </p>
+                </div>
+
+                <div class="instructor-info">
+                  <img src="assets/profile/ava4.svg" alt="" />
+                  <div class="instructor-text">
+                    <h6>Jenna Ortega</h6>
+                    <p>
+                      Senior Accountant
+                      <span>di <span class="gojek">Gojek</span></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-footer">
+              <div class="rating">
+                <img src="assets/logo/full-star.png" alt="" />
+                <img src="assets/logo/full-star.png" alt="" />
+                <img src="assets/logo/half-star.png" alt="" />
+                <img src="assets/logo/empty-star.png" alt="" />
+                <img src="assets/logo/empty-star.png" alt="" />
+                <span>3.5 (86)</span>
+              </div>
+              <h4 class="price">Rp 300K</h4>
+            </div>
+          </article>
+
+          <article class="course-card">
+            <div class="wrapper">
+              <figure class="card-banner">
+                <img src="assets/image/banner5.jpeg" alt="" />
+              </figure>
+
+              <div class="content-instructor">
+                <div class="card-content">
+                  <h6>Big 4 Auditor Financial Analyst</h6>
+                  <p>
+                    Mulai transformasi dengan instruktur profesional, harga yang
+                    terjangkau, dan...
+                  </p>
+                </div>
+
+                <div class="instructor-info">
+                  <img src="assets/profile/ava5.svg" alt="" />
+                  <div class="instructor-text">
+                    <h6>Jenna Ortega</h6>
+                    <p>
+                      Senior Accountant
+                      <span>di <span class="gojek">Gojek</span></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-footer">
+              <div class="rating">
+                <img src="assets/logo/full-star.png" alt="" />
+                <img src="assets/logo/full-star.png" alt="" />
+                <img src="assets/logo/half-star.png" alt="" />
+                <img src="assets/logo/empty-star.png" alt="" />
+                <img src="assets/logo/empty-star.png" alt="" />
+                <span>3.5 (86)</span>
+              </div>
+              <h4 class="price">Rp 300K</h4>
+            </div>
+          </article>
+
+          <article class="course-card">
+            <div class="wrapper">
+              <figure class="card-banner">
+                <img src="assets/image/banner6.jpeg" alt="" />
+              </figure>
+
+              <div class="content-instructor">
+                <div class="card-content">
+                  <h6>Big 4 Auditor Financial Analyst</h6>
+                  <p>
+                    Mulai transformasi dengan instruktur profesional, harga yang
+                    terjangkau, dan...
+                  </p>
+                </div>
+
+                <div class="instructor-info">
+                  <img src="assets/profile/ava6.svg" alt="" />
+                  <div class="instructor-text">
+                    <h6>Jenna Ortega</h6>
+                    <p>
+                      Senior Accountant
+                      <span>di <span class="gojek">Gojek</span></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-footer">
+              <div class="rating">
+                <img src="assets/logo/full-star.png" alt="" />
+                <img src="assets/logo/full-star.png" alt="" />
+                <img src="assets/logo/half-star.png" alt="" />
+                <img src="assets/logo/empty-star.png" alt="" />
+                <img src="assets/logo/empty-star.png" alt="" />
+                <span>3.5 (86)</span>
+              </div>
+              <h4 class="price">Rp 300K</h4>
+            </div>
+          </article>
+
+          <article class="course-card">
+            <div class="wrapper">
+              <figure class="card-banner">
+                <img src="assets/image/banner7.jpeg" alt="" />
+              </figure>
+
+              <div class="content-instructor">
+                <div class="card-content">
+                  <h6>Big 4 Auditor Financial Analyst</h6>
+                  <p>
+                    Mulai transformasi dengan instruktur profesional, harga yang
+                    terjangkau, dan...
+                  </p>
+                </div>
+
+                <div class="instructor-info">
+                  <img src="assets/profile/ava7.svg" alt="" />
+                  <div class="instructor-text">
+                    <h6>Jenna Ortega</h6>
+                    <p>
+                      Senior Accountant
+                      <span>di <span class="gojek">Gojek</span></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-footer">
+              <div class="rating">
+                <img src="assets/logo/full-star.png" alt="" />
+                <img src="assets/logo/full-star.png" alt="" />
+                <img src="assets/logo/half-star.png" alt="" />
+                <img src="assets/logo/empty-star.png" alt="" />
+                <img src="assets/logo/empty-star.png" alt="" />
+                <span>3.5 (86)</span>
+              </div>
+              <h4 class="price">Rp 300K</h4>
+            </div>
+          </article>
+
+          <article class="course-card">
+            <div class="wrapper">
+              <figure class="card-banner">
+                <img src="assets/image/banner8.jpeg" alt="" />
+              </figure>
+
+              <div class="content-instructor">
+                <div class="card-content">
+                  <h6>Big 4 Auditor Financial Analyst</h6>
+                  <p>
+                    Mulai transformasi dengan instruktur profesional, harga yang
+                    terjangkau, dan...
+                  </p>
+                </div>
+
+                <div class="instructor-info">
+                  <img src="assets/profile/ava8.svg" alt="" />
+                  <div class="instructor-text">
+                    <h6>Jenna Ortega</h6>
+                    <p>
+                      Senior Accountant
+                      <span>di <span class="gojek">Gojek</span></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-footer">
+              <div class="rating">
+                <img src="assets/logo/full-star.png" alt="" />
+                <img src="assets/logo/full-star.png" alt="" />
+                <img src="assets/logo/half-star.png" alt="" />
+                <img src="assets/logo/empty-star.png" alt="" />
+                <img src="assets/logo/empty-star.png" alt="" />
+                <span>3.5 (86)</span>
+              </div>
+              <h4 class="price">Rp 300K</h4>
+            </div>
+          </article>
+
+          <article class="course-card">
+            <div class="wrapper">
+              <figure class="card-banner">
+                <img src="assets/image/banner9.jpeg" alt="" />
+              </figure>
+
+              <div class="content-instructor">
+                <div class="card-content">
+                  <h6>Big 4 Auditor Financial Analyst</h6>
+                  <p>
+                    Mulai transformasi dengan instruktur profesional, harga yang
+                    terjangkau, dan...
+                  </p>
+                </div>
+
+                <div class="instructor-info">
+                  <img src="assets/profile/ava9.svg" alt="" />
+                  <div class="instructor-text">
+                    <h6>Jenna Ortega</h6>
+                    <p>
+                      Senior Accountant
+                      <span>di <span class="gojek">Gojek</span></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-footer">
+              <div class="rating">
+                <img src="assets/logo/full-star.png" alt="" />
+                <img src="assets/logo/full-star.png" alt="" />
+                <img src="assets/logo/half-star.png" alt="" />
+                <img src="assets/logo/empty-star.png" alt="" />
+                <img src="assets/logo/empty-star.png" alt="" />
+                <span>3.5 (86)</span>
+              </div>
+              <h4 class="price">Rp 300K</h4>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="cta">
+        <div class="cta-content">
+          <div class="cta-text-content">
+            <h6>NEWSLETTER</h6>
+            <h3>Mau Belajar Lebih Banyak?</h3>
+            <p>
+              Daftarkan dirimu untuk mendapatkan informasi terbaru dan penawaran
+              spesial dari program-program terbaik harisenin.com
+            </p>
+          </div>
+
+          <div class="cta-input">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Masukkan Emailmu"
+              required
+              autocomplete="email"
+            />
+            <button type="button" class="subscribe">Subscribe</button>
+          </div>
+        </div>
       </section>
     </main>
+
+    <footer>
+      <div class="company-info">
+        <div class="brand-contact">
+          <a href="/beranda.html">
+            <img src="assets/logo/brandLogo.svg" alt="Logo videobelajar" />
+          </a>
+          <div class="text-contact">
+            <h6>
+              Gali Potensi Anda Melalui Pembelajaran Video di hariesok.id!
+            </h6>
+            <p>Jl. Usman Effendi No. 50 Lowokwaru, Malang</p>
+            <p>+62-877-7123-1234</p>
+          </div>
+        </div>
+
+        <div class="list">
+          <ul class="footer-category">
+            <h6>Kategori</h6>
+            <li><a href="#">Digital & Teknologi</a></li>
+            <li><a href="#">Pemasaran</a></li>
+            <li><a href="#">Manajemen Bisnis</a></li>
+            <li><a href="#">Pengembangan Diri</a></li>
+            <li><a href="#">Desain</a></li>
+            <p class="arrow">></p>
+          </ul>
+
+          <ul class="about">
+            <h6>Perusahaan</h6>
+            <li><a href="#">Tentang Kami</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Kebijakan Privasi</a></li>
+            <li><a href="#">Ketentuan Layanan</a></li>
+            <li><a href="#">Bantuan</a></li>
+            <p class="arrow">></p>
+          </ul>
+
+          <ul class="comunity">
+            <h6>Komunitas</h6>
+            <li><a href="#">Tips Sukses</a></li>
+            <li><a href="#">Blog</a></li>
+            <p class="arrow">></p>
+          </ul>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p class="copyright-content">@2023 Gerobak Sayur All Right Reserved.</p>
+        <figure class="copyright-content">
+          <img src="assets/logo/linkedin.svg" alt="" />
+          <img src="assets/logo/facebook.svg" alt="" />
+          <img src="assets/logo/instagram.svg" alt="" />
+          <img src="assets/logo/twitter.svg" alt="" />
+        </figure>
+      </div>
+    </footer>
   </body>
 </html>

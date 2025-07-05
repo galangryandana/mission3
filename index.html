@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Masuk ke akun videobelajar untuk melanjutkan proses belajar anda. Platform belajar online terbaik."
+    />
+    <title>Login - Videobelajar</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="topbar">
+      <a href="/beranda.html">
+        <img src="assets/logo/brandLogo.svg" alt="Logo Videobelajar" />
+      </a>
+    </nav>
+
+    <main class="auth">
+      <article class="form-card">
+        <div class="header">
+          <h1>Masuk ke Akun</h1>
+          <p>Yuk, lanjutin belajarmu di videobelajar</p>
+        </div>
+
+        <form action="#" method="post">
+          <div class="main-input">
+            <div class="text-input">
+              <div class="form-group">
+                <label for="email">E-mail</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                  autocomplete="email"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="password">Kata Sandi</label>
+                <div class="input-wrapper">
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    required
+                    autocomplete="current-password"
+                  />
+                  <button
+                    type="button"
+                    class="password-icon"
+                    aria-label="Tampilkan atau sembunyikan kata sandi"
+                  >
+                    <img src="assets/logo/eye-password.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+
+              <a href="#" class="forgot-password">Lupa Password?</a>
+            </div>
+
+            <div class="btn-input">
+              <button type="submit" class="btn btn-primary">Masuk</button>
+
+              <a href="/daftar.html" class="btn btn-secondary">Daftar</a>
+            </div>
+          </div>
+
+          <div class="divider">atau</div>
+
+          <button type="submit" class="btn btn-google">
+            <img src="assets/logo/google.svg" alt="" />
+            Masuk dengan Google
+          </button>
+        </form>
+      </article>
+    </main>
+  </body>
+</html>
